@@ -1,0 +1,14 @@
+{
+
+  "images": ["img/sprites/ui_ss.png"],
+  "frames": {"width":53, "height":53, "regX": 0, "regY":0},
+  "animations": {
+    "up":[0],
+    "down":[1],
+    "left":[2],
+    "right":[3],
+    "skip":[4],
+    "delete":[5],
+    "slot":[6]
+  }
+}

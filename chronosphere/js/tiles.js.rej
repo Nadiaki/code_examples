@@ -1,0 +1,27 @@
+diff a/js/tiles.js b/js/tiles.js	(rejected hunks)
+@@ -418,23 +418,13 @@
+     stage.addChild(hourglass);
+ 
+     //TODO: this should count the time to make moves - reduce height through time
+-    var hourglassBG;//this part covers up the sand as the time is running out
++    //this part covers up the sand as the time is running out
+     hourglassBG = new createjs.Shape;
+     hourglassBG.graphics.beginFill("#434a54").drawRect(0,0,50,25);
+     hourglassBG.x = 1175;
+     hourglassBG.y = 625;
+     stage.addChild(hourglassBG);
+-    //hourglass full: height 0, hourglass empty: height 150
+-    function countDownTimer(){
+-        countDown--;
+-        //goal 150, have 25
+-        hourglassBG.scaleY+=0.025;
+-        console.log(countDown);
+-        if(countDown==0){
+-            clearInterval(interval);
+-            nextTurn();
+-        }
+-    }
++
+     interval = setInterval(countDownTimer, 100);
+ 
+     var uiFrame;

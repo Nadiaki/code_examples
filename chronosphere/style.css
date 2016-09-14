@@ -1,0 +1,87 @@
+@font-face {
+    font-family: ExistenceLight;
+    src: url('font/ExistenceLight.ttf');
+}
+
+@font-face {
+    font-family: ExistenceStencil;
+    src: url('font/ExistenceStencilLight.ttf');
+}
+
+*, *::before, *::after {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-image: url("img/bg_img.png");
+    font-family: ExistenceLight;
+    font-size:30px;
+    text-align: center;
+    color:#F5F7FA;
+}
+
+#canvas, #wrapper {
+    background-color: #26282b;
+    display:block;
+    margin:0 auto;
+}
+
+ul li {
+    display: inline;
+    width: 350px;
+    padding:2em;
+    }
+ul {
+    width: 1050px;
+    margin:0 auto;
+}
+
+#wrapper {
+    position: relative;
+}
+
+#howto, #ui {
+    position:absolute;
+    top:0;
+    text-align: center;
+    width:100%;
+}
+
+.center {
+    text-align: center;
+    margin:25px auto;
+}
+
+#game_title {
+    background-image: url("img/chronosphere.png");
+    background-size: cover;
+    width:1600px;
+    height: 100px;
+    margin:10px auto 20px auto;
+}
+
+a, button {
+    text-decoration: none;
+    text-outline: none;
+    font-family: ExistenceLight;
+    font-size:30px;
+    text-align: center;
+    color:#F5F7FA;
+    background: none;
+    border:none;
+}
+
+#chronosphere_animation img {
+    animation: rotate 3s infinite;
+    display: block;
+    margin: 0 auto;
+}
+
+@keyframes rotate {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}

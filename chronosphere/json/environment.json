@@ -1,0 +1,25 @@
+{
+
+  "images": ["img/sprites/basetiles_ss.png"],
+  "frames": {"width":50, "height":50, "regX": 0, "regY":0},
+  "animations": {
+    "northwall":[0],
+    "eastwall":[1],
+    "southwall":[2],
+    "westwall":[3],
+    "nwwhirl":[4],
+    "newhirl":[5],
+    "sewhirl":[6],
+    "swwhirl":[7],
+    "base":[8],
+    "exit":[9],
+    "fullwall":[10],
+    "halfwall":[11],
+    "upwind":[12],
+    "rightwind":[13],
+    "downwind":[14],
+    "leftwind":[15],
+    "empty":[16],
+    "exitwall":[17]
+  }
+}

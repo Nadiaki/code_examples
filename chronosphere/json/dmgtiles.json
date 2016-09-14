@@ -1,0 +1,19 @@
+{
+
+  "images": ["img/sprites/dmgtiles_ss.png"],
+  "frames": {"width":50, "height":50, "regX": 0, "regY":0},
+  "animations": {
+    "pulsar1":[0],
+    "pulsar2":[1],
+    "pulsar3":[2],
+    "aoe":[3],
+    "laserGen":[4],
+    "laserNS":[5],
+    "laserWE":[6],
+    "laserEN":[7],
+    "laserEE":[8],
+    "laserES":[9],
+    "laserEW":[10],
+    "base":[11]
+  }
+}

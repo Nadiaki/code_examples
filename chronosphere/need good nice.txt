@@ -1,0 +1,33 @@
+NEED TO HAVE:
+-proper user interface!!
+-moves working as intended (test and fix wind and whirl glitches) - Done, I think
+
+-sounds: 
+	wind sound (on push)
+	laser and pulsar dmg sound
+-toggle sound button (mute on/off)
+-loop background music - DONE!!
+-game over (death) screen
+-help button (write down what needs to be on help screens!!)
+
+-levels with appropriate rise in difficulty (without getting players freaked out with a difficulty jump)
+
+
+GOOD TO HAVE:
+-items to collect for points
+-level completed message stating which level you have completed (text instead of graphics)
+-game completed/death screen stating the level you reached and the score
+
+NICE TO HAVE:
+-sphere rotating when it moves (but only on user input moves, not on environmental moves!!)
+-sphere exiting the level animation (add additional sprite for the wall next to the level exit, as it needs to be valid) -DONE
+-animate the winds (phase1: display 1 arrow, phase 2: display 2 arrows, phase 3&4: display 3 arrows)
+-separate buttons to move background music and other sounds
+
+
+NOTES:
+- make main starting screen where player can choose tutorial or normal levels
+- help and audio settings could be accessed from that screen
+
+-figure out what to do with places where aoe and lasers overlap
+
