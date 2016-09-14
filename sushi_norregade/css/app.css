@@ -1,0 +1,586 @@
+body {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    color:#0c0704;
+}
+
+p{
+    font-size:1.2rem;
+    line-height:1.92rem;
+    margin-bottom:1.2rem;
+}
+
+@media screen and (max-width: 39.9375em){
+    p{
+        font-size:1rem;
+        line-height:1.6rem;
+        margin-bottom:1rem;
+    }
+}
+
+h1, h2, h3, h4, h5, button, .phone-button {
+    font-family: 'Lato', sans-serif;
+    font-weight:700;
+}
+
+h1 {
+    margin-bottom:0.5em;
+}
+
+h2, h3, h4 {
+    margin-bottom:1.5em;
+}
+
+h5 {
+    color: #ff936c;
+}
+
+h1 {
+    text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 5px;
+}
+
+a, a:focus {
+    color: #ffb092;
+    text-decoration: none;
+    font-weight:700;
+    outline:none;
+}
+
+a.salmon-outlined, a.rice-outlined {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    padding:1rem 2rem;
+    border: 3px solid #ff936c;
+    font-size:1.2rem;
+    line-height:8rem;
+    transition: 0.5s;
+}
+a.salmon-outlined:hover, a.rice-outlined:hover {
+    background-color:#ff936c;
+    color:#faf9f5;
+}
+
+a.rice-outlined{
+    border:3px solid #faf9f5;
+    color:#faf9f5;
+}
+
+a.rice-outlined:hover{
+    border:3px solid #faf9f5;
+    color:#ff936c;
+    background:#faf9f5;
+}
+
+a:hover {
+    color:#ff936c;
+}
+
+
+#div-welcome, #div-quote, #div-dishes, #div-why, #div-review, #div-tripadvisor, #div-contact, #div-reservation, #div-login,
+#div-registration, #div-select, #div-backoffice, #div-allyoucaneat, #div-kitchen, #div-waiter-mode, #div-stock{
+    padding-top:5rem;
+    padding-bottom:5rem;
+    background:#faf9f5;
+
+}
+
+
+/*NAVIGATION*/
+#widemenu{
+    background:#f5f2ed;
+    opacity:0.99;
+    border-bottom:1px solid #b5be03;
+    position:fixed;
+    z-index:100;
+    width:100%;
+    padding:0.2rem;
+}
+.top-bar, .top-bar ul {
+    background: none;
+    padding:0;
+
+}
+#widemenu a, .menu.vertical > li > a {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after{
+    border-color:#ff936c transparent transparent;
+}
+.dropdown.menu > li.opens-right > .is-dropdown-submenu {
+    background: #f5f2ed;
+}
+
+.is-dropdown-submenu {
+    border:1px solid #b5be03;
+    border-top:none;
+    margin-top:3px;
+}
+
+.title-bar, .menu.vertical {
+    background:#f5f2ed;
+    opacity:0.99;
+}
+
+.menu.vertical {
+    overflow-x:hidden;
+}
+.menu-icon::after {
+    background:#ffb092;
+    box-shadow: 0 7px 0 #ffb092, 0 14px 0 #ffb092;
+}
+
+.menu-icon:hover::after {
+    background:#ff936c;
+    box-shadow: 0 7px 0 #ff936c, 0 14px 0 #ff936c;
+}
+
+.is-dropdown-submenu:hover {
+    display:block;
+}
+
+/*FORMS AND BUTTONS*/
+label {
+    font-size:1.2rem;
+    line-height:1.92rem;
+}
+
+@media screen and (max-width: 39.9375em){
+    label {
+        font-size:1rem;
+        line-height:1.6rem;
+    }
+}
+
+[type='text'], [type='password'], [type='date'], [type='email'], [type='number'], [type='tel'], [type='time'], textarea {
+    border-radius:0;
+    border-color:#c7ce44;
+}
+
+[type='text']:focus, [type='password']:focus, [type='date']:focus, [type='email']:focus, [type='number']:focus, [type='tel']:focus, [type='time']:focus, textarea:focus {
+    border-radius:0;
+    border-color:#8e9d3e;
+}
+
+textarea {
+    height:9.6rem;
+}
+
+.button,.input-group-label {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    background:#c7ce44;
+    color:#faf9f5;
+    border-radius: 0;
+}
+.button:hover, .button:focus{
+    background:#b5be03;
+    color:#f5f2ed;
+}
+
+.button.secondary {
+    background:#f5f2ed;
+    color:#494542;
+}
+.button.secondary:hover, .button.secondary:focus{
+    background:#f0ede6;
+    color:#0c0704;
+}
+
+.button.success {
+    background:#aab66e;
+    color:#faf9f5;
+}
+
+.button.success:hover, .button.success:focus{
+    background:#8e9d3e;
+    color:#f5f2ed;
+}
+
+.button.alert {
+    background:#ffb092;
+    color:#f5f2ed;
+}
+
+.button.alert:hover, .button.alert:focus{
+    background:#ff936c;
+    color:#faf9f5;
+}
+
+.button.expanded {
+    font-size:1.1rem;
+}
+
+.slider {
+    background: #e6e8a7;
+}
+
+.slider-fill{
+    background-color: #c7ce44;
+}
+
+.slider-handle {
+    background: #b5be03;
+}
+.slider-handle:hover {
+    background: #8e9d3e;
+}
+
+
+
+
+
+
+/*HEADER*/
+@media screen and (min-width: 40em){
+    h1 {
+    font-size:3.1rem;
+    }
+}
+
+header {
+    min-height:100vh;
+    position:relative;
+    background-image: url("../img/welcome-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    color:#faf9f5;
+}
+
+header button{
+    padding:1rem 2rem;
+    border: 3px solid #faf9f5 !important;
+    font-size:1.6rem;
+    text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 5px;
+    background-color:rgba(0,0,0,0.25) !important;
+    max-width:100%;
+    margin:0 auto;
+}
+
+#reserve-button:hover {
+    background-color:#faf9f5 !important;
+    color:#ff936c !important;
+    text-shadow: none;
+}
+
+#phone-button:hover {
+    cursor:inherit;
+}
+
+.show-for-small-only .button.large {
+    width:20rem;
+}
+
+@media screen and (min-width: 40em){
+    header button:first-of-type {
+        margin-right:1rem;
+    }
+}
+
+.screen-center {
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:36rem;
+    height:10rem;
+    margin-left:-18rem;
+    margin-top:-5rem;
+}
+
+span.phone-button{
+    padding:1rem 2rem;
+    border: 3px solid #faf9f5;
+    font-size:1.6rem;
+    text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 5px;
+    background-color:rgba(0,0,0,0.25);
+}
+
+
+@media screen and (max-width: 39.9375em){
+    span.phone-button {
+        padding:1rem;
+        font-size:1.1rem;
+        line-height:1.6rem;
+    }
+}
+/*#DIV-WELCOME*/
+#div-welcome{
+    background-image: url("../img/logo-rice.png");
+    background-size: contain;
+    background-position: right center;
+    background-repeat:no-repeat;
+}
+
+
+/*#DIV-QUOTE*/
+
+#div-quote{
+    background-image: url("../img/sushi2.jpg");
+    background-size: cover;
+    background-position: right bottom;
+    background-attachment: fixed;
+}
+
+blockquote, blockquote:before, .quote-source{
+    color:#faf9f5;
+    font-family: 'Lato', sans-serif;
+    font-weight:700;
+    font-size:1.6rem;
+    line-height:2.56rem;
+    text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 5px;
+}
+
+blockquote {
+    border:none;
+    position:relative;
+    text-transform: uppercase;
+}
+
+blockquote:before{
+    position:absolute;
+    font-size:8rem;
+    content: '\201D';
+    left:-2rem;
+    top:1.5rem;
+}
+
+.quote-source {
+    margin-top: 2.25rem;
+    text-align: center;
+    font-style: italic;
+}
+
+@media screen and (max-width: 39.9375em){
+    blockquote, .quote-source{
+        font-size:1.2rem;
+        line-height:1.92rem;
+    }
+
+    blockquote:before{
+        font-size:4rem;
+        left:-1rem;
+        top:0.5rem;
+    }
+
+    .quote-source {
+        margin-top: 2.25rem;
+        text-align: center;
+        font-style: italic;
+    }
+}
+
+/*#DIV-DISHES*/
+#div-dishes img {
+    max-width:100%;
+    margin-bottom:2rem;
+}
+
+/*#DIV-WHY*/
+#div-why svg {
+    max-width:20%;
+}
+
+/*#DIV-REVIEW*/
+#div-review{
+    background-image: url("../img/sushi4.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/*#DIV-LOGIN*, #DIV-RESERVATION, #DIV-REGISTRATION*/
+#div-login, #div-registration {
+    min-height:100vh;
+    background-image: url("../img/transp-sushi.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+#div-reservation {
+    min-height:100vh;
+    background-image: url("../img/reservation-bg.jpg");
+    background-position: top center;
+    background-size: cover;
+}
+
+.log-in-form, .reservation-form, .registration-form, .selection-wrapper, .food-category-wrapper {
+    border: 1px solid #c7ce44;
+    padding: 2.5rem !important;
+    margin-top:3rem;
+    background:#f5f2ed;
+}
+
+@media screen and (max-width: 39.9375em){
+    .log-in-form, .reservation-form, .registration-form, .selection-wrapper, .food-category-wrapper {
+        padding: 1.5rem !important;}
+
+}
+
+
+[type='checkbox'] + label {
+    font-size:1.1rem;
+}
+
+
+/*#DIV-TRIPADVISOR*/
+#div-tripadvisor{
+    background-image: url("../img/sushi3.jpg");
+    background-size: cover;
+    background-position: right bottom;
+    background-attachment: fixed;
+    text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 5px;
+}
+
+#div-tripadvisor svg {
+    max-width:16rem;
+    text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 5px;
+}
+
+#div-tripadvisor a:focus{
+    outline:none;
+}
+
+/*SLICK SLIDER*/
+.slick-track .row:focus {
+    outline:none;
+}
+
+.slick-track .row {
+    padding:1.8rem;
+}
+
+/*#DIV-MAP*/
+#div-map {
+    position:relative;
+}
+#map-overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:5;
+}
+
+
+/*#DIV-SELECT*/
+#div-select {
+    min-height:100vh;
+    background-image: url("../img/transp-sushi2.jpg");
+    background-size: cover;
+    background-position: right bottom;
+}
+
+/*#DIV-BACKOFFICE*/
+#div-backoffice {
+
+}
+
+/*#DIV-WAITER-MODE*/
+#div-waiter-select, #div-waiter-reserve, #div-waiter-ready, #div-waiter-active, #div-waiter-calls {
+    min-height:100vh;
+    padding-top:4rem;
+    padding-bottom:3rem;
+}
+
+.waiter-reservation-confirmation {
+    min-height: 50%;
+
+}
+
+#div-waiter-ready ul{
+    list-style:none;
+    margin-left:0;
+}
+
+#div-waiter-ready ul li {
+    margin-bottom:4rem;
+}
+
+#div-waiter-ready ul li:last-of-type {
+    margin-bottom:0rem;
+}
+/*#DIV-ALLYOUCANEAT*/
+.en-ingredients {
+    color:#ff936c;
+}
+
+.input-group {
+    margin-left: 1rem;
+    margin-top: -0.5rem;
+    margin-bottom: 2rem;
+}
+
+.order-btn, .order-btn-all-you-can-eat {
+    margin-top:3rem;
+}
+
+/*FOOTER*/
+footer {
+    font-family: 'Lato', sans-serif;
+    font-weight:700;
+    padding-top:3rem;
+    padding-bottom:3rem;
+}
+
+footer p {
+    margin-bottom:0.6rem;
+    font-size:0.8rem;
+    line-height:1.28rem;
+}
+
+/*text styling*/
+.salmon-text {
+    color:#ff936c;
+}
+
+.nori-text{
+    color:#0c0704;
+}
+
+.bold {
+    font-family: 'Lato', sans-serif;
+    font-weight:700;
+}
+/*backgrounds*/
+.salmon-dark {
+    background:#ff936c;
+    color:#faf9f5;
+}
+
+.wasabi-dark {
+    background:#b5be03;
+    color:#faf9f5;
+}
+
+.nori-dark {
+    background:#0c0704;
+    color:#faf9f5;
+}
+
+.rice-light {
+    background:#faf9f5;
+    color:#0c0704;
+}
+
+.hover-rice {
+    padding-top:1.5rem;
+    padding-bottom:1.5rem;
+    transition: 0.7s;
+}
+.hover-rice:hover {
+    background:#f5f2ed;
+}
+
+/*ANIMATIONS*/
+
+.animate-btt{
+    animation: btt 1s ease-out;
+    opacity:1;
+}
+
+@keyframes btt {
+    0% {transform:translate(0%,10%); opacity:0;}
+    100% {transform:translate(0%,0%); opacity:1;}
+}

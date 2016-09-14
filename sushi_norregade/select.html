@@ -1,0 +1,59 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mode selection - Sushi Nørregade</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,700italic,900|Merriweather:400,700,900'
+          rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!--global navigation-->
+<nav>
+    <div class="row">
+        <div class="small-12 columns">
+            <ul class="menu align-right">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Story</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">All - You - Can - Eat</a></li>
+                <li><a href="#">Take - Away</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--end global navigation-->
+<!--TODO: show this only for staff! - user levels that are NOT guest; otherwise just leave them on main site, with welcome message in top right corner-->
+<div id="div-select" class="rice-light">
+    <div class="row align-center text-center">
+        <div class="small-12 medium-8 large-6 columns">
+            <!--TODO: load username for logged on user-->
+            <h2>WELCOME, <span class="salmon-text">USERNAME!</span></h2>
+
+            <div class="selection-wrapper">
+                <p>Please select mode:</p>
+                <p><a href="bo-mode.html" class="button expanded">BACK OFFICE</a></p>
+                <p><a href="kitchen-mode.html" class="button expanded">KITCHEN</a></p>
+                <p><a href="waiter-mode.html" class="button expanded">WAITER</a></p>
+                <p><a href="guest-mode.html" class="button expanded">GUEST</a></p>
+                <p>New at Sushi Nørregade? Go to:</p>
+                <p><a type="rules.html" class="button expanded alert">STAFF HANDBOOK</a></p>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

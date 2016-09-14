@@ -1,0 +1,40 @@
+SALMON DARK: #ff936c
+SALMON MED: #ffb092
+SALMON LIGHT: #ffdbcd
+
+wasabi.v1
+WASABI DARK: #8e9d3e
+WASABI MED: #aab66e
+WASABI LIGHT: #d8debc
+
+wasabi.v2
+WASABI DARK: #b5be03
+WASABI MED: #c7ce44
+WASABI LIGHT: #e6e8a7
+
+NORI DARK: #0c0704
+NORI MED: #494542
+NORI LIGHT: #aaa9a7
+
+RICE DARK: #f0ede6
+RICE MED: #f5f2ed
+RICE LIGHT: #faf9f5
+
+
+100%-75%-35%
+
+TITLE FONTS:
+Lato, bold
+in nori dark if title is in one line, if it crosses to second line, then second line is in salmon dark
+
+BODY FONT:
+Merriweather regular, nori dark
+
+If text is on top of image, then use rice light color, with drop shadow (black, 50% transparency) for better readability
+
+FONT SIZES: (to get them in pixels, multiply by 16)
+body: 1.2rem, line height:1.92 (golden ratio)
+bottom margin for paragraphs: 1.2rem
+
+h1:3.1rem
+h2:2.5rem
