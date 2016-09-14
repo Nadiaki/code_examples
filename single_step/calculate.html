@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Calculate Trip</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="js/trip_selector.js"></script>
+
+	</head>
+	<body>
+	<h1>Calculate Trip</h1>
+	<div id="calculateTripForm">
+		<form>
+			<fieldset>
+				<legend>Transport to Croatia:</legend>
+				<table>
+					<tr><td><input type="checkbox"  value="1000" class="tripPrice">Airplane 1000kr</td></tr>	
+					<tr><td><input type="checkbox"  value="800" class="tripPrice">Train 800kr</td></tr>		
+					<tr><td><input type="checkbox"  value="500" class="tripPrice">Bus 500kr</td></tr>		
+					<tr><td><input type="checkbox"  value="0" class="tripPrice">Your own car 0kr</td></tr>
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>Transport in Croatia:</legend>
+				<table>
+					<tr><td><input type="checkbox" value="1200" class="tripPrice">Rent a car (5 days) 1200kr</td></tr>
+					<tr><td><input type="checkbox"  value="300" class="tripPrice">Train/bus 300kr</td></tr>
+					<tr><td><input type="checkbox"  value="500" class="tripPrice">Boat 500kr</td></tr>
+					<tr><td><input type="checkbox"  value="0" class="tripPrice">Your own car 0kr</td></tr>
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>Accomadation:</legend>
+				<table>
+					<tr><td><input type="checkbox" value="3000" class="tripPrice">Hotel 5 stars 3000kr</td></tr>
+					<tr><td><input type="checkbox"  value="2600" class="tripPrice">Hotel 4 stars 2600kr</td></tr>
+					<tr><td><input type="checkbox"  value="2000" class="tripPrice">Apartment 2000kr</td></tr>
+					<tr><td><input type="checkbox"  value="600" class="tripPrice">Hostel 600kr</td></tr>
+	 			</table>
+		 	</fieldset>
+			<fieldset>
+				<legend>Tours:</legend>
+				<table>
+					<tr><td><input type="checkbox" value="200" class="tripPrice">Bicycle tour 200kr</td></tr>
+					<tr><td><input type="checkbox"  value="300" class="tripPrice">Wine cellar 300kr</td></tr>
+					<tr><td><input type="checkbox"  value="200" class="tripPrice">GOT tour 200kr</td></tr>
+					<tr><td><input type="checkbox"  value="100" class="tripPrice">City tour 100kr</td></tr>
+					<tr><td><input type="checkbox"  value="400" class="tripPrice">Sailing tour 400kr</td></tr>
+					<tr><td><input type="checkbox"  value="200" class="tripPrice">Local living 200kr</td></tr>
+				</table>
+		 	</fieldset>
+			<fieldset>
+				<legend>Single Step App Pack:</legend>
+				<table>
+					<tr><td><input type="checkbox" value="0" class="tripPrice">Basic 0kr</td></tr>
+					<tr><td><input type="checkbox"  value="50" class="tripPrice">Premium 50kr</td></tr>
+				</table>
+		 	</fieldset>
+		 	<fieldset>
+				<legend>Receive local offers during the trip for:</legend>
+				<table>
+					<tr><td><input type="checkbox" value="0" class="tripPrice">Restaurants</td></tr>
+					<tr><td><input type="checkbox"  value="0" class="tripPrice">Museums</td></tr>
+					<tr><td><input type="checkbox"  value="0" class="tripPrice">Shopping</td></tr>
+					<tr><td><input type="checkbox"  value="0" class="tripPrice">Additional tours</td></tr>
+				</table>
+			</fieldset>
+					<td></td><td>
+						<input type="submit" value="Reset"></td>
+						<input type="submit" value="Book Now!"></td>
+					
+					<tr>
+						<td>Price:</td><td><span id = "total_trip_price"> 0kr </span></td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+	</div>
+
+	</body>

@@ -1,0 +1,904 @@
+@font-face {
+    font-family: GeomanistRegular;
+    src: url(fonts/geomanist-regular-webfont.woff);
+}
+@font-face {
+    font-family: GeomanistBook;
+    src: url(fonts/geomanist-book-webfont.woff);
+}
+@font-face {
+    font-family: GeomanistBold;
+    src: url(fonts/geomanist-bold-webfont.woff);
+}
+@font-face {
+    font-family: GeomanistUltra;
+    src: url(fonts/geomanist-ultra-webfont.woff);
+}
+
+
+
+* {
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body {
+    background:#ffefdb;
+    font-family: GeomanistBook, sans-serif;
+    font-size: 20px;
+    color: #001c3d;
+}
+
+/*=====LINKS=====*/
+a {
+    outline:0;
+    text-decoration: none;
+    font-family: GeomanistRegular, sans-serif;
+    text-transform: uppercase;
+    color: #fffaf5;
+    font-size: 21px;
+    border: solid 2px #fffaf5;
+    transition:0.2s;
+}
+
+a:hover {
+    background: #fffaf5;
+    color: #001c3d;
+}
+
+/*=====HEADERS=====*/
+h1 {
+    font-family: GeomanistUltra;
+    font-size: 40px;
+    color: #faaa1d;
+    text-align: center;
+    margin: 0.5em auto 0.5em auto;
+}
+
+h2 {
+    font-family: GeomanistUltra;
+    font-size: 28px;
+    color: #faaa1d;
+    text-align:left;
+    margin: 1em auto 0.5em auto;
+}
+
+h3 {
+    font-family: GeomanistBold;
+    font-size: 20px;
+    color: #faaa1d;
+    text-align:left;
+    margin: 1em auto 0.5em auto;
+    
+}
+h4 {
+    font-family: GeomanistBold;
+    font-size: 20px;
+    color: #001c3d;
+    text-align:left;
+    margin: 1em auto 0.5em auto;
+}
+
+p {
+    line-height: 30px;
+    margin-bottom: 1em;
+}
+
+/*=====TOP NAVIGATION=====*/
+ 
+nav {
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 10;
+    height:65px;
+    width:100%;
+    background: #001c3d;
+}
+
+nav a {
+    text-transform: uppercase;
+    border:none;
+}
+
+nav a:hover {
+    background: #001c3d;
+    color:#faaa1d;
+}
+nav ul {
+    text-align: right;
+    margin: 1em 1em 1em 0;
+    display: inline;
+    float:right;
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+nav ul li:hover {
+    color: #faaa1d;
+}
+
+#nav_logo {
+    height: 35px;
+    margin-top:15px;
+    margin-left:1em;
+}
+
+
+/*=====FORMS=====*/
+input, textarea {
+    line-height: 1.5em;
+    border: #faaa1d solid 1px;
+    font-family: GeomanistBook, sans-serif;
+}
+
+input[type=file]{
+    border: none;
+}
+
+form td {
+    padding-right:1em;
+}
+
+input[type=submit],input[type=reset], input[type=upload]{
+    width:auto;
+    padding:0.3em 1em;
+    background: #faaa1d;
+    color: #fffaf5;
+    margin-top: 0.3em;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+input[type=radio] {
+    margin-right:0.5em;
+}
+/*=====LOGIN/SIGN UP=====*/
+
+#login, #signup {
+    display: block;
+    margin: 0 auto;
+    padding-top: 5em;
+    background: url("images/login_bg.jpg") center center;
+    background-size: cover;
+    color: #001c3d;
+}
+
+#login h3, #signup h3 {
+    text-align: center;
+    color: #001c3d;
+}
+
+#login form, #signup form, #new_to_ss {
+    width:310px;
+    display: block;
+    margin: 1em auto 0 auto;
+}
+
+#signup form {
+    width:375px;
+}
+
+#signup input {
+    width:100%;
+}
+
+#signup input[type=submit], #signup input[type=reset]{
+    background: #001c3d;
+    margin-right:0.5em;
+    width:45%;
+    cursor: pointer;
+}
+#login input, #signup input {
+    border-color: #001c3d;
+    
+}
+
+#login input[type=submit], #login input[type=reset]{
+    background: #001c3d;
+    cursor: pointer;
+}
+ 
+#new_to_ss a{
+    padding: 0.5em 1.5em;
+    border: #001c3d 2px solid;
+    color: #fffaf5;
+    background: #001c3d;
+    transition: 0.2s;
+}
+
+#new_to_ss a:hover {
+    background: none;
+    color: #001c3d;
+}
+#new_to_ss p {
+    margin-bottom: 1.5em;
+}
+
+
+/*=====START=====*/
+#start {
+    background: url("images/dubrovnik_start.jpg") no-repeat center center;
+    background-size: cover;     
+}
+
+#quote_wrap {
+    position: absolute;
+    bottom: 5%;
+    left:50%;
+    margin-left: -300px;   
+}
+
+#quote_wrap a {
+    padding: 0.5em 1.5em;
+}
+
+#quote_wrap a:hover, #discover a:hover {
+    background: #fffaf5;
+    color: #001c3d;
+}
+#quote_link {
+    margin-top: 2em;
+    text-align: center;
+}
+#quote_link p {
+    margin-top:1.5em;
+    color: #fffaf5;
+}
+
+/*=====ABOUT=====*/
+
+#about {
+    background: url("images/roofs.jpg") no-repeat center top;
+    background-size: cover;
+    text-align: center;
+}
+
+/*=====TRIP=====*/
+#trip {
+    background: #fffaf5;
+    padding-bottom: 1.5em;
+}
+
+#trip ul{
+    list-style: none;
+    width:100%;  
+}
+
+#trip ul li {
+    display: inline-block;
+    width:30%;
+    margin-right: 5%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+#trip ul li:last-of-type{
+    margin-right:0;
+}
+
+#trip ul li img {
+    width:100%;
+}
+/*=====GALLERY=====*/
+#image_upload h4 {
+    margin-top:0;
+    font-family: GeomanistBook;
+}
+
+#image_upload input, #image_upload textarea {
+    width: 100%;
+}
+
+#gallery_photos {
+    background: #001c3d;
+    padding: 1em;
+}
+
+#gallery_photos_wrap ul li {
+    position: relative;
+    width:30%;
+    margin-right: 5%;
+    float:left;    
+}
+
+#gallery_photos_wrap ul li:nth-of-type(3n+0) {
+    margin-right:0;
+}
+
+#gallery_photos_wrap img {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width:100%;
+}
+
+#gallery_photos_wrap ul li .photo_details{
+    position:absolute;
+    top:0;
+    left:0;
+    background:rgba(0,28,61,0.6);
+    color:#fffaf5;
+    width:100%;
+    height:100%;
+    padding: 1em;
+    opacity:0;
+    transition: 0.2s;
+}
+
+#gallery_photos_wrap ul li:hover .photo_details{
+    opacity: 1;
+    height: 100%;
+}
+
+.photo_details p {
+    color:#fffaf5;
+    margin-bottom: 0.8em;
+    font-size: 19px;
+    line-height: 25px;
+}
+.photo_details h4 {
+    margin-top:0.8em;
+    color:#32d3ce;
+}
+
+.gallery_image_description {
+    text-align: left;
+}
+
+/*=====POSTCARD=====*/
+/*POSTCARD FORM*/
+
+fieldset {
+    border:none;
+    margin-bottom: 1em;
+}
+
+textarea {
+    padding: 0.5em;
+}
+#postcard_page input, #postcard_page textarea, #postcard_page select {
+    font-family: GeomanistBook, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    width:100%;
+}
+
+#postcard_page input[type=reset], #postcard_page input[type=submit]{
+    padding: 0.3em 0.5em;
+    margin-right: 0.5em;
+    width: auto;
+    min-width:6em;
+}
+#postcard_page input[type=radio]{
+   width:auto;
+}
+
+#postcard_page input[type=color]{
+   width:3em;
+   margin-left:1em;
+}
+
+#pc_form {
+    padding-right:1em;
+}
+
+#pc_form h4 {
+    margin-top:0;
+}
+/*POSTCARD PREVIEW*/
+#pc_front, #pc_back {
+    width:100%;
+    height:400px;
+    overflow: hidden;
+}
+
+#pc_back {
+    background: white;
+    padding: 1em;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 20px;   
+}
+
+#pc_front {
+    background-image:url(images/pc_vis.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    border: 0.5em solid #001024;
+    margin-bottom:1em;
+}
+
+#prev_caption {
+    position: absolute;
+    color: #fffaf5;
+    text-transform: uppercase;
+    bottom:1em;
+    right:1em;
+    font-family:GeomanistBold;
+    font-size:20px;
+}
+
+#prev_address {
+    background: url("images/stamps.jpg") no-repeat right top;
+    height: 100%;
+    padding: 180px 1em 1em 1em;
+}
+
+#prev_message {
+    border-right: 2px solid #001024;
+    height:100%;
+}
+
+#prev_message_signature {
+    text-align: right;
+    padding:2em;
+}
+#prev_address p {
+    margin-bottom: 0.65em;
+    border-bottom: dotted 2px grey;
+}
+
+#prev_address p:first-child {
+    display: inline-block;
+}
+
+
+/*=====POSTCARD-FONTS=====*/
+.geo_ultra {
+    font-family: GeomanistUltra, sans-serif;
+    font-size: 22px;
+}
+
+.geo_bold {
+    font-family: GeomanistBold, sans-serif;
+    font-size: 20px;
+}
+
+.walter_turncoat {
+    font-family: 'Walter Turncoat', cursive;
+}
+
+.architects_daughter {
+    font-family: 'Architects Daughter', cursive;
+}
+
+.girl_nextdoor {
+    font-family: 'The Girl Next Door', cursive;
+}
+
+/*=====CREATE TRIP=====*/
+#create input {
+   margin: 0 0.7em 0 0.5em;
+}
+
+#create fieldset {
+    padding-bottom: 1em;
+}
+#create hr {
+    border-top: 2px solid #001c3d;
+    margin-top:1em;
+    width:70%;
+}
+#create input[type=submit] {
+    padding:0.5em 1.5em;
+    min-width: 8em;
+}
+#create img {
+    width:100%;
+}
+
+/*=====APP=====*/
+#app_text {
+    margin-right:5%;
+}
+#app img {
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+
+#app ul {
+    margin-bottom: 1em;
+}
+
+#app ul li {
+    margin-left: 1em;
+}
+
+/*=====DISCOVER CROATIA=====*/
+
+#discover {
+    padding-top:0;
+    background: url("images/discover_hvar.jpg") no-repeat center center;
+    background-size: cover;
+    text-align: center;
+}
+
+#discover_top {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+#discover_top h1,#discover_top p {
+    color: #fffaf5;
+}
+
+#discover a {
+    margin:0.5em;
+    padding: 0.5em;;
+    display: inline-block;
+    width: 180px;
+}
+#discover p {
+    margin-bottom: 2em;
+}
+
+
+/*=====EXPERIENCE=====*/
+
+#experience {
+    background: #fffaf5;
+}
+
+#experience h3 {
+    text-align: center;
+    margin-top: 2em;
+}
+#experience_testimonials {
+    width:700px;
+    display: block;
+    margin:0 auto;
+    text-align: center;
+}
+
+#experience_testimonials a {
+    text-transform: uppercase;
+    font-family: GeomanistRegular;
+    font-size: 21px;
+    border: solid 2px #faaa1d;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    transition: 0.2s;
+    margin-top: 0.5em;
+    display: inline-block;
+    width:340px;
+    background:#faaa1d;
+    color: #fffaf5;
+}
+
+#experience_testimonials a:first-of-type {
+    margin-right: 0.5em;
+}
+
+#experience_testimonials a:hover {
+    color: #faaa1d;
+    background: #fffaf5;
+    border: solid 2px #faaa1d;   
+}
+
+#featured_photos, #gallery_photos {
+    background: #001c3d;
+    margin: 1em 0 2em 0;
+}
+
+#featured_photos_wrap, #gallery_photos_wrap {
+    width:1000px;
+    padding:1em 0;
+}
+
+#featured_photos_wrap ul li, #gallery_photos_wrap ul li {
+    display: inline-block;
+    width:30%;
+    margin-right:5%;
+}
+#featured_photos_wrap ul li:last-of-type {
+    margin-right:0;
+}
+#featured_photos_wrap ul li img, #gallery_photos_wrap ul li img {
+    max-width: 100%;
+}
+
+/*=====MEMORIES=====*/
+
+#memories {
+    width:1000px;
+    padding:1em 0;
+}
+
+.memories_shared {
+    width:30%;
+    margin-right: 5%;
+    float:left;
+}
+
+.memories_shared:last-of-type {
+    margin-right:0;
+}
+
+.memories_shared q {
+    display: block;
+}
+
+.stars {
+    color: #faaa1d;
+}
+
+/*=====CONTACT=====*/
+#contact {
+    background:#001c3d;
+    color:#fffaf5;
+    padding: 1em 0;
+    font-family: GeomanistRegular;
+    font-size: 20px;
+}
+
+.contact_divs {
+    width:30%;
+    margin-right:5%;
+    float:left;
+}
+
+#contact_last{
+    margin-right: 0;
+}
+
+.contact_divs li {
+    list-style: none;
+}
+
+#contact h4 {
+    color:#32d3ce;    
+}
+
+#contact a {
+    border:none;
+}
+
+/*=====EXPLORE=====*/
+
+#explore {
+    background: #fffaf5;
+    padding-bottom: 2em;
+}
+
+#explore_text {
+    text-align: center;
+    width:700px;   
+}
+
+#explore_packages {
+    margin-top:2em;
+}
+
+#explore_packages ul{
+    list-style: none;
+    width:100%;  
+}
+
+#explore_packages ul li {
+    display: inline-block;
+    width:30%;
+    margin-right: 5%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+#explore_packages ul li:last-of-type{
+    margin-right:0;
+}
+
+#explore_packages ul li img {
+    width:100%;
+}
+
+#explore_packages ul li .trip_name{
+    position:absolute;
+    top:0;
+    left:0;
+    background:#001c3d;
+    color:#fffaf5;
+    width:100%;
+    height:100%;
+    padding: 1em;
+    opacity: 0;
+    transition: 0.3s;
+}
+#explore_packages ul li:hover .trip_name{
+    opacity: 1;
+    cursor: pointer;
+}
+
+#explore_packages ul li:last-of-type .trip_name {
+    background:#faaa1d;
+}
+
+.trip_name h4 {
+    color:#fffaf5;
+    text-align: center;
+}
+
+
+/*=====ISLAND HOPPING=====*/
+
+#island_hopping {
+    background: #fffaf5;
+}
+
+#island_hopping_top {
+    min-height: 50vh;
+    background: url("images/island_hopping_big.jpg") right center;
+    background-size: cover;
+}
+
+#island_hopping dt, .pricetag {
+    font-family: GeomanistBold;
+    margin-top: 0.5em;
+}
+
+#island_hopping dl {
+    margin-bottom: 1em;
+}
+
+#island_hopping_text {
+    padding: 0 1em 1em 0;
+    float:left;
+}
+
+#island_hopping_img {
+    float:left;
+    padding: 0 0 1em 1em;
+}
+
+#island_hopping_img img {
+    width:100%;
+    background: pink;
+}
+
+#island_hopping a {
+    text-align: center;
+    border: solid 2px #faaa1d;
+    padding: 0.5em 1.5em;
+    color: #faaa1d;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    display: inline-block;
+    width: 230px;
+    background: #faaa1d;
+    color: #fffaf5;
+}
+
+#island_hopping a:hover {
+    background: #fffaf5;
+    color: #faaa1d;
+}
+
+#island_hop_slider {
+    position: relative;
+    padding: 0.5em 0 1em 0;
+    overflow: hidden;
+    height: 500px;
+}
+#img4, #img3, #img2, #img1 {
+    position: absolute;
+    top:0.5em;
+    left:100%;
+}
+
+#img1 {
+    animation: slide1 16s infinite;
+}
+#img2 {
+    animation: slide2 16s infinite;
+}
+
+#img3 {
+    animation: slide2 16s infinite;
+    animation-delay: 4s;
+}
+#img4 {
+    animation: slide2 16s infinite;
+    animation-delay: 8s;
+}
+@keyframes slide1 {
+    0% {left:0; opacity: 1;}
+    20% {left:0;opacity:1;}
+    25% {left:100%;opacity:1;}
+    45% {left:100%;opacity:0;} 
+    50% {left:-100%;opacity:0;}
+    70% {left:-100%;opacity:1;}
+    75% {left:-100%;opacity:1;} 
+    95% {left:-100%;opacity:1;}
+    100% {left:0; opacity:1;}
+}
+@keyframes slide2 {
+    0% {left:-100%;opacity:1;}
+    20% {left:-100%;opacity:1;}
+    25% {left:0; opacity:1;}
+    45% {left:0; opacity: 1;} 
+    50% {left:100%;opacity:1;}
+    70% {left:100%;opacity:0;}
+    75% {left:-100%;opacity:0;}
+    95% {left:-100%;opacity:1;}
+    100% {left:-100%;opacity:1;}
+}
+
+#reviews {
+    padding-bottom: 2em;
+}
+
+/*=====FREQUENTLY USED CLASSES=====*/
+.vh_section {
+    width:100%;
+    min-height:100vh;
+    padding-top: 65px;
+}
+
+.center {
+    display: block;
+    margin:0 auto;
+}
+
+.center_text {
+    text-align: center;
+}
+
+.left_text {
+    text-align: left;
+}
+
+.short_centertext {
+    padding-left: 15%;
+    padding-right:15%;
+}
+.max_width {
+    width:940px;
+}
+.two_thirds {
+    width:65%;
+}
+
+.one_third {
+    width:30%;
+}
+
+.three_col {
+    width:30%;
+    margin-right: 5%;
+}
+
+.three_col:last-of-type{
+    margin-right:0;
+}
+
+.half {
+    width:47.5%;
+}
+
+.half:first-of-type {
+    margin-right:5%;
+}
+
+.fifty {
+    width: 50%;
+}
+
+.center_seven {
+    width:700px;
+    display: block;
+    margin:0 auto;
+}
+.left {
+    float:left;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  
+

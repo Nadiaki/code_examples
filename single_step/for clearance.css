@@ -1,0 +1,728 @@
+@font-face {
+    font-family: GeomanistRegular;
+    src: url(fonts/geomanist-regular-webfont.woff);
+}
+@font-face {
+    font-family: GeomanistBook;
+    src: url(fonts/geomanist-book-webfont.woff);
+}
+@font-face {
+    font-family: GeomanistBold;
+    src: url(fonts/geomanist-bold-webfont.woff);
+}
+@font-face {
+    font-family: GeomanistUltra;
+    src: url(fonts/geomanist-ultra-webfont.woff);
+}
+
+
+
+* {
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body {
+    background:#ffefdb;
+    font-family: GeomanistBook, sans-serif;
+    font-size: 18px;
+    color: #001c3d;
+    
+    
+}
+
+p, dd {
+    font-size: 18px;
+    line-height: 28.8px;
+    color: #001024;
+    margin-bottom: 1em;
+}
+
+q {
+    font-family: GeomanistBold;
+}
+h1 {
+    font-family: GeomanistUltra;
+    font-size: 40px;
+    color: #faaa1d;
+    text-align: center;
+    margin: 30px auto 20px auto;
+}
+h3 {
+    font-family: GeomanistUltra;
+    font-size: 28px;
+    color: #faaa1d;
+}
+
+
+nav {
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 10;
+    height:65px;
+    width:100%;
+    background: #001c3d;
+}
+
+
+nav a, #contact a {
+    text-transform: uppercase;
+    font-family: GeomanistRegular;
+    font-size: 21px;
+    text-decoration: none;
+    color: #fffaf5;
+}
+a {
+    outline: 0;
+}
+nav ul {
+    text-align: right;
+    margin: 20px 50px;
+    display: inline;
+    float:right;
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+nav ul li:hover, #contact a:hover {
+    color: #faaa1d;
+}
+
+#nav_logo {
+    height: 35px;
+    margin-top:15px;
+    margin-left:20px;
+}
+
+/*MAIN SECTIONS*/
+
+.section {
+    width:100%;
+    min-height:100vh;
+    padding-top: 65px;
+}
+
+
+/*=====START=====*/
+
+#start {
+    background: url("images/dubrovnik_start.jpg") no-repeat center center;
+    background-size: cover;     
+}
+
+#quote_wrap {
+    position: absolute;
+    bottom: 5%;
+    left:50%;
+    margin-left: -300px;   
+}
+
+#quote_wrap a, #discover a, #island_hopping a {
+    text-transform: uppercase;
+    font-family: GeomanistRegular;
+    font-size: 21px;
+    border: solid 2px #fffaf5;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    color: #fffaf5;
+    transition: 0.2s;
+}
+
+#quote_wrap a:hover, #discover a:hover {
+    background: #fffaf5;
+    color: #001c3d;
+}
+#quote_link {
+    margin-top: 2em;
+    text-align: center;
+}
+#quote_link p {
+    margin-top:1.5em;
+    color: #fffaf5;
+}
+
+/*=====ABOUT=====*/
+
+#about {
+    background: url("images/roofs.jpg") no-repeat center top;
+    background-size: cover;
+    text-align: center;
+}
+
+#about_ss {
+    width:700px;
+    display: block;
+    margin:0 auto;
+}
+
+
+/*=====PERFECT TRIP=====*/
+#trip {
+    background: #fffaf5;
+    padding-bottom: 1.5em;
+}
+
+#perfect_trip {
+    text-align: center;
+    width:700px;   
+}
+
+#trip_images {
+    width: 1000px;
+}
+
+
+
+
+/*=====APP=====*/
+
+#app {
+    background: #ffefdb;
+}
+
+#app_wrap {
+    width: 1000px;
+}
+
+#app_text {
+    width:65%;
+    margin-right:5%;
+    float:left;
+    padding-bottom: 2em;
+}
+
+#app_mockup:after {
+    clear:both;
+}
+
+#app_mockup {
+    width:30%;
+    text-align: center;
+    padding-top: 40px;
+    float:left;
+    padding-bottom: 2em;
+    
+}
+#app ul {
+    margin-bottom: 1em;
+}
+
+#app ul li {
+    margin-left: 1em;
+}
+
+#app img {
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+
+
+/*=====DISCOVER CROATIA=====*/
+
+#discover {
+    padding-top:0;
+    background: url("images/discover_hvar.jpg") no-repeat center center;
+    background-size: cover;
+    text-align: center;
+}
+
+#discover_top {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    max-width: 700px;
+}
+
+#discover_top h1,#discover_top p {
+    color: #fffaf5;
+}
+
+#discover a {
+    margin:0.5em;
+    display: inline-block;
+    width: 180px;
+}
+#discover p {
+    margin-bottom: 2em;
+}
+
+
+
+/*=====EXPLORE=====*/
+
+#explore {
+    background: #fffaf5;
+    padding-bottom: 2em;
+}
+
+#explore_text {
+    text-align: center;
+    width:700px;   
+}
+
+#explore_packages {
+    width: 1000px;
+    margin-top:2em;
+}
+
+#explore_packages ul{
+    list-style: none;
+    width:100%;  
+}
+
+#explore_packages ul li {
+    display: inline-block;
+    width:30%;
+    margin-right: 5%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+#explore_packages ul li:last-of-type{
+    margin-right:0;
+}
+
+#explore_packages ul li img {
+    width:100%;
+}
+
+#explore_packages ul li .trip_name{
+    position:absolute;
+    top:-100%;
+    left:0;
+    background:#001c3d;
+    color:#fffaf5;
+    width:100%;
+    padding: 1em;
+    transition: 0.3s ease-in-out;
+}
+#explore_packages ul li:hover .trip_name{
+    top:0;
+}
+
+#explore_packages ul li:last-of-type .trip_name {
+    background:#faaa1d;
+    top:auto;
+    bottom:-100%;
+}
+
+#explore_packages ul li:last-of-type:hover .trip_name{
+    bottom:0;
+}
+
+
+/*=====ISLAND HOPPING=====*/
+
+#island_hopping {
+    background: #fffaf5;
+}
+
+#island_hopping_top {
+    min-height: 50vh;
+    background: url("images/island_hopping_big.jpg") right center;
+    background-size: cover;
+}
+
+#island_hopping_wrap {
+    width:1000px;
+}
+
+#island_hopping dt, .pricetag {
+    font-family: GeomanistBold;
+    margin-top: 0.5em;
+}
+
+#island_hopping dl {
+    margin-bottom: 1em;
+}
+
+#island_hopping_text {
+    padding: 0 1em 1em 0;
+    float:left;
+}
+
+#island_hopping_img {
+    float:left;
+    padding: 0 0 1em 1em;
+}
+
+#island_hopping_img img {
+    width:100%;
+    background: pink;
+}
+
+#island_hopping a {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-family: GeomanistRegular;
+    font-size: 21px;
+    border: solid 2px #faaa1d;
+    padding: 0.5em 1.5em;
+    color: #faaa1d;
+    transition: 0.2s;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    display: inline-block;
+    width: 230px;
+    background: #faaa1d;
+    color: #fffaf5;
+}
+
+#island_hopping a:hover {
+    background: #fffaf5;
+    color: #faaa1d;
+}
+
+#island_hop_slider {
+    position: relative;
+    padding: 0.5em 0 1em 0;
+    overflow: hidden;
+    height: 500px;
+}
+#img4, #img3, #img2, #img1 {
+    position: absolute;
+    top:0.5em;
+    left:100%;
+}
+
+#img1 {
+    animation: slide1 16s infinite;
+}
+#img2 {
+    animation: slide2 16s infinite;
+}
+
+#img3 {
+    animation: slide2 16s infinite;
+    animation-delay: 4s;
+}
+#img4 {
+    animation: slide2 16s infinite;
+    animation-delay: 8s;
+}
+@keyframes slide1 {
+    0% {left:0; opacity: 1;}
+    20% {left:0;opacity:1;}
+    25% {left:100%;opacity:1;}
+    45% {left:100%;opacity:0;} 
+    50% {left:-100%;opacity:0;}
+    70% {left:-100%;opacity:1;}
+    75% {left:-100%;opacity:1;} 
+    95% {left:-100%;opacity:1;}
+    100% {left:0; opacity:1;}
+}
+@keyframes slide2 {
+    0% {left:-100%;opacity:1;}
+    20% {left:-100%;opacity:1;}
+    25% {left:0; opacity:1;}
+    45% {left:0; opacity: 1;} 
+    50% {left:100%;opacity:1;}
+    70% {left:100%;opacity:0;}
+    75% {left:-100%;opacity:0;}
+    95% {left:-100%;opacity:1;}
+    100% {left:-100%;opacity:1;}
+}
+
+#reviews {
+    padding-bottom: 2em;
+}
+.stars {
+    color: #faaa1d;
+}
+
+
+/*=====EXPERIENCE=====*/
+
+#experience {
+    background: #fffaf5;
+}
+
+#experience h3 {
+    text-align: center;
+    margin-top: 2em;
+}
+#experience_testimonials {
+    width:700px;
+    display: block;
+    margin:0 auto;
+    text-align: center;
+}
+
+#experience_testimonials a {
+    text-transform: uppercase;
+    font-family: GeomanistRegular;
+    font-size: 21px;
+    border: solid 2px #faaa1d;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    transition: 0.2s;
+    margin-top: 0.5em;
+    display: inline-block;
+    width:340px;
+    background:#faaa1d;
+    color: #fffaf5;
+}
+
+#experience_testimonials a:first-of-type {
+    margin-right: 0.5em;
+}
+
+#experience_testimonials a:hover {
+    color: #faaa1d;
+    background: #fffaf5;
+    border: solid 2px #faaa1d;   
+}
+
+#featured_photos, #gallery_photos {
+    background: #001c3d;
+    margin: 1em 0 2em 0;
+}
+
+#featured_photos_wrap, #gallery_photos_wrap {
+    width:1000px;
+    padding:1em 0;
+}
+
+#featured_photos_wrap ul li, #gallery_photos_wrap ul li {
+    display: inline-block;
+    width:30%;
+    margin-right:5%;
+}
+#featured_photos_wrap ul li:last-of-type {
+    margin-right:0;
+}
+#featured_photos_wrap ul li img, #gallery_photos_wrap ul li img {
+    max-width: 100%;
+}
+
+
+/*=====MEMORIES=====*/
+
+#memories {
+    width:1000px;
+    padding:1em 0;
+}
+
+.memories_shared {
+    width:30%;
+    margin-right: 5%;
+    float:left;
+}
+
+.memories_shared:last-of-type {
+    margin-right:0;
+}
+
+.memories_shared q {
+    display: block;
+}
+
+
+
+/*=====GALLERY=====*/
+#gallery_text, #image_upload {
+    width:50%;
+    float:left;
+    text-align: left;
+}
+#gallery_text {
+    padding: 0 1em 1em 0;
+}
+#image_upload {
+    padding: 0 0 1em 1em;
+}
+
+#gallery {
+    text-align: center;
+}
+#upload_to_gallery {
+    width:1000px;
+    display: block;
+    margin:0 auto;
+}
+
+#gallery_photos_wrap ul li:nth-of-type(3n+0) {
+    margin-right:0;
+}
+#gallery_photos_wrap ul li {
+    position: relative;
+}
+
+#gallery_photos_wrap img {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#gallery_photos_wrap ul li .photo_details{
+    position:absolute;
+    top:0;
+    left:0;
+    background:rgba(0,28,61,0.5);
+    color:#fffaf5;
+    width:100%;
+    height:100%;
+    padding: 1em;
+    opacity:0;
+    transition: 0.3s ease-in-out;
+}
+#gallery_photos_wrap ul li:hover .photo_details{
+    opacity: 1;
+    height: 100%;
+}
+.photo_details p {
+    color:#fffaf5;
+    margin-bottom: 1em;
+}
+.photo_details h4 {
+    margin-top:1em;
+}
+
+.gallery_image_description {
+    text-align: left;
+}
+
+/*=====FORMS=====*/
+form td {
+    padding-right:1em;
+}
+input, textarea {
+    width:100%;
+    line-height: 1.5em;
+    border: #faaa1d solid 1px;
+    font-family: GeomanistBook, sans-serif;
+}
+
+input[type=file]{
+    border: none;
+}
+input[type=submit],input[type=reset], input[type=upload]{
+    width:auto;
+    padding:0.3em 1em;
+    background: #faaa1d;
+    color: #fffaf5;
+    margin-top: 0.3em;
+}
+/*=====FREQUENTLY USED=====*/
+
+.center {
+    display: block;
+    margin:0 auto;
+}
+
+.half {
+    width:50%;
+    padding-right:1em;
+}
+
+.triple_list {
+    width:1000px;
+    padding: 2em auto;
+}
+
+.triple_list ul{
+    list-style: none;
+    width:100%;
+}
+
+.triple_list ul li {
+    display: inline-block;
+    width:30%;
+    margin-right: 5%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.triple_list ul li:last-of-type{
+    margin-right:0;
+}
+
+.triple_list ul li img {
+    width:100%;
+}
+
+
+
+/*=====CONTACT=====*/
+
+#contact {
+    background:#001c3d;
+    color:#fffaf5;
+    padding: 1em 0;
+    font-family: GeomanistRegular;
+    font-size: 20px;
+}
+
+#contact_wrap {
+    width:1000px;
+}
+
+.contact_divs {
+    width:30%;
+    margin-right:5%;
+    float:left;
+    
+}
+
+#contact_last{
+    margin-right: 0;
+}
+
+.contact_divs img {
+    max-width: 100%;
+}
+
+.contact_divs li {
+    list-style: none;
+}
+
+
+.clearfix {
+    display: block;
+    width:100%;
+    clear:both;
+}
+
+/*=====LOGIN/SIGN UP=====*/
+
+#login, #signup {
+    display: block;
+    margin: 0 auto;
+    padding-top: 5em;
+    background: url("images/login_bg.jpg") center center;
+    background-size: cover;
+    color: #001c3d;
+}
+
+#login h3, #signup h3 {
+    text-align: center;
+    color: #001c3d;
+}
+
+#login form, #signup form {
+    width:310px;
+    display: block;
+    margin: 1em auto 0 auto;
+}
+
+#signup form {
+    width:365px;
+}
+
+#signup input[type=submit], #signup input[type=reset]{
+    background: #001c3d;
+    margin-right:0.5em;
+}
+#login input, #signup input {
+    border-color: #001c3d;
+    
+}
+
+#login input[type=submit], #login input[type=reset]{
+    background: #001c3d;
+}
